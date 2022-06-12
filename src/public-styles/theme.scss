@@ -1,0 +1,28 @@
+:root {
+    --background: #11111d;
+    --text-primary: #c0c0c0;
+}
+
+[data-theme='light'] {
+    --background: #e8e8e8;
+    --background-lighter: #e0e0e0;
+    --text-primary: #2a2a5e;
+    --text-primary-lighter: #838387;
+    --btn-color: #2a2a5e;
+    --btn-text: #e8e8e8;
+    --tooltip-text: #2a2a5e;
+    --tooltip-background: #1f1f2a0f;
+    --border: #cccce1;
+}
+
+[data-theme='dark'] {
+    --background: #11111d;
+    --background-lighter: #151523;
+    --text-primary: #c0c0c0;
+    --text-primary-lighter: #68686E;
+    --btn-color: #c0c0c0;
+    --btn-text: #11111d;
+    --tooltip-text: #f8991c;
+    --tooltip-background: #1f1f2a;
+    --border: #202037;
+}
