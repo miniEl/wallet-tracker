@@ -11,27 +11,22 @@ const App = () => {
     const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
     const toggleTheme = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
+      setTheme(theme === 'light' ? 'dark' : 'light');
     }
 
-    useEffect(() => {
-        document.body.setAttribute('data-theme', theme);
-        return () => {
-            document.body.removeAttribute('data-theme');
-        };
+    useEffect(() => {      
+      document.body.setAttribute('data-theme', theme);
+      return () => {
+        document.body.removeAttribute('data-theme');
+      };
     }, [theme])
 
-    return ( <
-        div className = "app" >
-        <
-        Header theme = { theme }
-        onToggleTheme = { toggleTheme }
-        /> <
-        ExpenseList / >
-        <
-        Footer / >
-        <
-        /div>
+    return ( 
+      <div className="app">
+        <Header theme={theme} onToggleTheme={toggleTheme} />
+        <ExpenseList />
+        <Footer />
+      </div>
     );
 }
 
