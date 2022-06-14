@@ -1,6 +1,6 @@
 import './ExpenseItem.scss';
 
-const ExpenseItem = (props) => {
+const ExpenseItem = (props: any) => {
 
   return (
     <div className='expense-item'>
