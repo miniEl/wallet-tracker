@@ -19,7 +19,7 @@ const App = () => {
       return () => {
         document.body.removeAttribute('data-theme');
       };
-    }, [theme])
+    }, [theme]);
 
     return ( 
       <div className="app">

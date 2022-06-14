@@ -29,18 +29,18 @@ const ExpenseList = () => {
         }
     ];
 
-    return ( <
-        Card className = "expense-list" > {
+    return ( 
+        <Card className = "expense-list"> 
+        {
             expenses.map(expense =>
-                <
-                ExpenseItem key = { expense.id }
+                <ExpenseItem key = { expense.id }
                 title = { expense.title }
                 amount = { expense.amount }
                 date = { expense.date }
                 />
             )
-        } <
-        /Card>
+        } 
+        </Card>
     );
 }
 

@@ -2,7 +2,7 @@ import logo from '../../assets/logo.svg';
 import { MdDarkMode, MdLightMode } from 'react-icons/md';
 import './Header.scss';
 
-const Header = ({theme, onToggleTheme}) => {
+const Header = ({theme, onToggleTheme}: any) => {
   return (
     <div className="header">
       <div className="logo-wrapper">
