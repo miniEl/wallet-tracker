@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import useLocalStorage from "use-local-storage";
 import Header from "./components/Header/Header";
-import ExpenseList from "./components/ExpenseList/ExpenseList";
+import ExpenseList from "./components/Expenses/ExpenseList/ExpenseList";
 import Footer from "./components/Footer";
 import './App.scss';
 
