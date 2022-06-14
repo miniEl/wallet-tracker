@@ -1,3 +1,4 @@
+import Card from "../Card/Card";
 import ExpenseItem from "../ExpenseItem/ExpenseItem";
 import './ExpenseList.scss';
 
@@ -30,13 +31,13 @@ const ExpenseList = () => {
     ];
 
   return (
-    <div className="section expense-list">
+    <Card className="expense-list">
     {
       expenses.map(expense => 
       <ExpenseItem key={expense.id} title={expense.title} amount={expense.amount} date={expense.date} />
       )
     }
-    </div>
+    </Card>
   );
 }
 
