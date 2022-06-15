@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import useLocalStorage from "use-local-storage";
+import useTheme from "./Custom-Hooks/useTheme";
 import Header from "./components/Header/Header";
 import ExpenseList from "./components/Expenses/ExpenseList/ExpenseList";
 import Footer from "./components/Footer";
@@ -7,19 +6,7 @@ import './App.scss';
 
 
 const App = () => {
-    const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
-
-    const toggleTheme = () => {
-      setTheme(theme === 'light' ? 'dark' : 'light');
-    }
-
-    useEffect(() => {      
-      document.body.setAttribute('data-theme', theme);
-      return () => {
-        document.body.removeAttribute('data-theme');
-      };
-    }, [theme]);
+  const [theme, toggleTheme] = useTheme();
 
     return ( 
       <div className="app">
