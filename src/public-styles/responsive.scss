@@ -1,0 +1,11 @@
+@media (max-width: 800px) {
+    .app {
+        padding: 0 4% !important;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+    .app {
+        padding: 0 15% !important;
+    }
+}
