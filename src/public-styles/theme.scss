@@ -3,7 +3,7 @@
     --text-primary: #c0c0c0;
 }
 
-[data-theme='light'] {
+[theme-mode='light'] {
     --background: #e8e8e8;
     --background-lighter: #e0e0e0;
     --text-primary: #2a2a5e;
@@ -15,7 +15,7 @@
     --border: #cccce1;
 }
 
-[data-theme='dark'] {
+[theme-mode='dark'] {
     --background: #11111d;
     --background-lighter: #151523;
     --text-primary: #c0c0c0;
