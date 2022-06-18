@@ -10,9 +10,9 @@ const useTheme = () => {
   }
 
   useEffect(() => {      
-    document.body.setAttribute('data-theme', theme);
+    document.body.setAttribute('theme-mode', theme);
     return () => {
-      document.body.removeAttribute('data-theme');
+      document.body.removeAttribute('theme-mode');
     };
   }, [theme]);
 
