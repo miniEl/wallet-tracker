@@ -30,7 +30,7 @@ const ExpenseList = () => {
     ];
 
     return ( 
-        <Card className = "expense-list"> 
+        <Card className='expense-list'> 
         {
             expenses.map(expense =>
                 <ExpenseItem key = { expense.id }
