@@ -1,6 +1,6 @@
-import useTheme from "./Helpers/useTheme";
+import useTheme from "./Hooks/useTheme";
 import Header from "./components/UI/Header/Header";
-import AddExpense from "./components/Expenses/AddExpense/AddExpense";
+import AddExpense from "./components/AddExpense/AddExpense";
 import ExpenseList from "./components/Expenses/ExpenseList/ExpenseList";
 import Footer from "./components/UI/Footer";
 import './App.scss';

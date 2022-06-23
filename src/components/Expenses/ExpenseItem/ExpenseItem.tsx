@@ -1,9 +1,13 @@
-import useCurrencyFormatter from '../../../Helpers/useCurrencyFormatter';
+import { useEffect } from 'react';
+import useCurrencyFormatter from '../../../Hooks/useCurrencyFormatter';
 import './ExpenseItem.scss';
 
 const ExpenseItem = (props: any) => {
-
-  const amount = useCurrencyFormatter('usd', props.amount);
+  const [amount, setFormat] = useCurrencyFormatter();
+  
+  useEffect(() => {      
+    setFormat('egp', props.amount);
+  }, []);
 
   return (
     <div className='expense-item'>
