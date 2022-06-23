@@ -4,7 +4,7 @@ import './AddExpense.scss';
 import SubmitForm from './SubmitForm/SubmitForm';
 
 const AddExpense = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className='add-expense'>

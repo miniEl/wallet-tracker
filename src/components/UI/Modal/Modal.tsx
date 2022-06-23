@@ -17,7 +17,7 @@ const Modal = (props: any) => {
           </button>
           </div>
           <div className="modal-content">{props.children}</div>
-          <div className="modal-actions">
+          <div className="modal-actions-wrapper">
             <div className="actions-container">
               <button
                 className={actionClass}
