@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import Modal from '../UI/Modal/Modal';
-import './AddExpense.scss';
-import SubmitForm from './SubmitForm/SubmitForm';
+import AddExpense from './AddExpense/AddExpense';
+import './NewExpense.scss';
 
-const AddExpense = () => {
+const NewExpense = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='add-expense'>
+    <div className='new-expense'>
       <button 
-      className='add-expense__add-btn primary-btn' 
+      className='new-expense__btn primary-btn' 
       onClick={() => setIsOpen(true)}>
         add expense
       </button>
@@ -19,12 +19,13 @@ const AddExpense = () => {
         className='add-new-expense' 
         setIsOpen={setIsOpen} 
         title='Add Expense'
-        action='submit'>
-          <SubmitForm />
+        // action='submit'
+        >
+          <AddExpense setIsOpen={setIsOpen} />
         </Modal>
       }
     </div>
   );
 }
 
-export default AddExpense;
+export default NewExpense;

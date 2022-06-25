@@ -7,7 +7,7 @@ const ExpenseItem = (props: any) => {
   
   useEffect(() => {      
     setFormat('egp', props.amount);
-  }, []);
+  });
 
   return (
     <div className='expense-item'>

@@ -2,8 +2,8 @@ import { IoMdClose } from 'react-icons/io';
 import './Modal.scss';
 
 const Modal = (props: any) => {
-  const classes = 'modal ' + props.className,
-  actionClass = props.action + '-btn';
+  const classes = 'modal ' + props.className;
+  // actionClass = props.action + '-btn';
   
   return (
     <div className={classes}>
@@ -17,7 +17,7 @@ const Modal = (props: any) => {
           </button>
           </div>
           <div className="modal-content">{props.children}</div>
-          <div className="modal-actions-wrapper">
+          {/* <div className="modal-actions-wrapper">
             <div className="actions-container">
               <button
                 className={actionClass}
@@ -32,7 +32,7 @@ const Modal = (props: any) => {
                 cancel
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       </div>
