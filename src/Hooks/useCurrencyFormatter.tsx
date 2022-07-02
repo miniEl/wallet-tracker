@@ -9,10 +9,9 @@ const useCurrencyFormatter = () => {
       style: "currency",
       minimumFractionDigits: 0,
     });
-
-    setAmount(currencyFormatter.format(value));
+    
+    setAmount(currencyFormatter.format(value)); 
   }
-  
   return [amount, setFormat];
 }
 

@@ -20,7 +20,7 @@
 
 .modal-wrapper {
     width: 100%;
-    height: 170px;
+    height: auto;
     background: white;
     color: white;
     z-index: 10;
@@ -68,69 +68,62 @@
 }
 
 .modal-actions-wrapper {
-    position: absolute;
-    bottom: 2px;
-    margin-bottom: 10px;
     width: 100%;
-}
-
-.actions-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.submit-btn {
-    cursor: pointer;
-    margin-top: 10px;
-    font-weight: 500;
-    padding: 11px 28px;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    border: none;
-    color: white;
-    background: #185adb;
-    text-transform: uppercase;
-    transition: all 0.25s ease;
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px -10px rgba(24, 90, 219, 0.6);
-    }
-}
-
-.delete-btn {
-    cursor: pointer;
-    margin-top: 10px;
-    font-weight: 500;
-    padding: 11px 28px;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    border: none;
-    color: white;
-    background: #ff3e4e;
-    text-transform: uppercase;
-    transition: all 0.25s ease;
-    &:hover {
-        box-shadow: 0 10px 20px -10px rgba(255, 62, 78, 0.6);
-        transform: translateY(-5px);
-    }
-}
-
-.cancel-btn {
-    cursor: pointer;
-    margin-top: 10px;
-    font-weight: 500;
-    padding: 11px 28px;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    border: none;
-    color: #2c3e50;
-    background: #f0f0f0;
-    text-transform: uppercase;
-    transition: all 0.25s ease;
-    &:hover {
-        box-shadow: none;
-        transform: none;
-        background: #e9e9e9;
+    .actions-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .submit-btn {
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: 500;
+            padding: 11px 28px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            border: none;
+            color: white;
+            background: #185adb;
+            text-transform: uppercase;
+            transition: all 0.25s ease;
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 20px -10px rgba(24, 90, 219, 0.6);
+            }
+        }
+        .delete-btn {
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: 500;
+            padding: 11px 28px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            border: none;
+            color: white;
+            background: #ff3e4e;
+            text-transform: uppercase;
+            transition: all 0.25s ease;
+            &:hover {
+                box-shadow: 0 10px 20px -10px rgba(255, 62, 78, 0.6);
+                transform: translateY(-5px);
+            }
+        }
+        .cancel-btn {
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: 500;
+            padding: 11px 28px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            border: none;
+            color: #2c3e50;
+            background: #f0f0f0;
+            text-transform: uppercase;
+            transition: all 0.25s ease;
+            &:hover {
+                box-shadow: none;
+                transform: none;
+                background: #e9e9e9;
+            }
+        }
     }
 }

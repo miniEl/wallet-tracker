@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Modal from '../UI/Modal/Modal';
-import AddExpense from './AddExpense/AddExpense';
+import ExpenseForm from './ExpenseForm/ExpenseForm';
 import './NewExpense.scss';
 
 const NewExpense = () => {
@@ -19,9 +19,8 @@ const NewExpense = () => {
         className='add-new-expense' 
         setIsOpen={setIsOpen} 
         title='Add Expense'
-        // action='submit'
         >
-          <AddExpense setIsOpen={setIsOpen} />
+          <ExpenseForm setIsOpen={setIsOpen} />
         </Modal>
       }
     </div>
