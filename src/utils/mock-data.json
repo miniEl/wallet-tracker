@@ -2,31 +2,31 @@
     "expenses": [{
             "id": 1,
             "title": "Sleek Wooden Car",
-            "amount": "239.71",
+            "amount": "EGP 239.71",
             "date": "28 Mar 22"
         },
         {
             "id": 2,
             "title": "Handcrafted Granite Cheese",
-            "amount": "42.63",
+            "amount": "EGP 42.63",
             "date": "8 Mar 22"
         },
         {
             "id": 3,
             "title": "Small Granite Pants",
-            "amount": "276.13",
+            "amount": "EGP 276.13",
             "date": "2 Feb 22"
         },
         {
             "id": 4,
             "title": "Fantastic Rubber Gloves",
-            "amount": "405.87",
+            "amount": "EGP 405.87",
             "date": "31 Jan 22"
         },
         {
             "id": 5,
             "title": "Tasty Soft Bacon",
-            "amount": "368.03",
+            "amount": "EGP 368.03",
             "date": "18 Dec 21"
         }
     ]

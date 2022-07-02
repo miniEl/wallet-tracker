@@ -6,6 +6,15 @@ export enum CurrencyEnum {
 }
 
 export type FormValues = {
-  currency: CurrencyEnum;
+  title: string;
   amount: number;
+  currency: CurrencyEnum;
+  date: string;
+}
+
+export type ExpenseItem = {
+  id: number;
+  title: string;
+  amount: number;
+  date: string;
 }
