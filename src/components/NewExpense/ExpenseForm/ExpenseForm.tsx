@@ -1,8 +1,16 @@
 import ExpenseFormService from './ExpenseFormService';
 import './ExpenseForm.scss'
+import { useEffect } from 'react';
 
 const ExpenseForm = (props: any) => {
-  const {currencyList, amount, register, handleSubmit, errors, onSubmit} = ExpenseFormService();
+  const {currencyList, register, handleSubmit, errors, onSubmit} = ExpenseFormService();
+  console.log(props);
+  
+
+  useEffect(() => {
+    console.log('eee', props);
+    props.callChildFunc.current = handleSubmit(onSubmit);
+  });
 
   return (
     <div className='expense-form'>
@@ -80,27 +88,7 @@ const ExpenseForm = (props: any) => {
         </div>
       </div>
 
-
-      <div className='modal-actions-wrapper'>
-        <div className='actions-container'>
-          <button
-            className='submit-btn'
-            type='submit'
-            onClick={() => setTimeout(() => props.setIsOpen(false), 1)}
-          >
-            submit
-          </button>
-          <button
-            className='cancel-btn'
-            onClick={() => props.setIsOpen(false)}
-          >
-            cancel
-          </button>
-        </div>
-      </div>
-
       </form>
-      <div>{amount}</div>
     </div>
   );
 }

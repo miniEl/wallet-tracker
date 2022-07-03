@@ -13,7 +13,6 @@ export interface ExpenseListState {
 
 const data = require("../utils/mock-data.json");
 export const expenses = data.expenses;
-console.log(expenses);
 
 const expenseListSlice = createSlice({
   name: 'expenseList',
@@ -27,6 +26,7 @@ const expenseListSlice = createSlice({
       state = state.map((item: any) => {
         if(item.id === newItem.id) 
         return newItem;
+        else return console.log("Error: newItem.id does't match item.id");
       });
     }
   }

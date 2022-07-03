@@ -5,7 +5,6 @@ import ExpenseList from "./components/Expenses/ExpenseList/ExpenseList";
 import Footer from "./components/UI/Footer";
 import './App.scss';
 
-
 const App = () => {
   const [theme, toggleTheme] = useTheme();
 

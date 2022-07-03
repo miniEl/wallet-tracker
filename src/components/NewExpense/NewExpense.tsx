@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Modal from '../UI/Modal/Modal';
 import ExpenseForm from './ExpenseForm/ExpenseForm';
 import './NewExpense.scss';
 
 const NewExpense = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const callChildFunc = useRef<any | null>();
 
   return (
     <div className='new-expense'>
@@ -19,8 +20,12 @@ const NewExpense = () => {
         className='add-new-expense' 
         setIsOpen={setIsOpen} 
         title='Add Expense'
+        action='submit'
+        callChildFunc={callChildFunc}
         >
-          <ExpenseForm setIsOpen={setIsOpen} />
+          <ExpenseForm 
+          setIsOpen={setIsOpen} 
+          callChildFunc={callChildFunc} />
         </Modal>
       }
     </div>
